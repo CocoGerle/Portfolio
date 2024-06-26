@@ -1,8 +1,8 @@
 import { Tag } from "../components/Tag";
 export const AboutMe = () => {
   return (
-    <div className="bg-[#111827] py-[64px] px-[16px] text-[#D1D5DB]">
-      <div className="lg:w-[70%] lg:m-auto">
+    <div className="bg-[#111827] py-[64px] px-[16px] text-[#D1D5DB] dark:bg-gray-50 dark:text-black">
+      <div className="lg:w-[1440px] lg:m-auto">
         <div className="flex justify-center mb-[24px] ">
           <Tag value="About Me" />
         </div>
@@ -10,7 +10,7 @@ export const AboutMe = () => {
           <div className="flex justify-center items-center flex-col lg:flex-1  lg:items-start ">
             <div className=" mb-[48px] h-[320px] w-[300px] lg:h-[480px] lg:w-[400px] ">
               <img
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover shadow-[20px_20px_8.0px_rgba(0,0,0,0.38)]"
                 src="/self-port2.jpg"
               />
             </div>

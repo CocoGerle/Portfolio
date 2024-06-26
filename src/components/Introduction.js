@@ -1,11 +1,12 @@
+import { MapsIcon } from "@/assets/icons/MapsIcon";
 import { Links } from "./Links";
-export const Introduction = () => {
+export const Introduction = ({ state }) => {
   return (
-    <div className="px-[16px] py-[64px]  lg:py-[96px] bg-[#030712] text-[#D1D5DB]">
-      <div className="flex flex-col-reverse gap-[48px] lg:w-[70%] m-auto lg:flex-row">
+    <div className="px-[16px] py-[64px]  lg:py-[96px] bg-[#030712] text-[#D1D5DB] dark:bg-white dark:text-black">
+      <div className="flex flex-col-reverse gap-[48px] lg:w-[1440px] m-auto lg:flex-row">
         <div className="flex flex-1 flex-col gap-6">
           <div className="flex flex-col gap-2">
-            <h1 className=" text-4xl text-[#F9FAFB] lg:text-7xl font-bold">
+            <h1 className=" text-4xl text-[#F9FAFB] lg:text-7xl font-bold dark:text-black">
               Hi, I’m Gerlee 👋
             </h1>
             <p>
@@ -18,7 +19,8 @@ export const Introduction = () => {
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex gap-2">
-              <img className="w-6 h-6 " src="/maps-icon.png" />
+              {/* <img className="w-6 h-6 " src="/maps-icon.png" /> */}
+              <MapsIcon color={state ? "black" : "#d1d5da"} />
               <p>Ulaanbaatar, Mongolia</p>
             </div>
             <div className="flex gap-2">
@@ -26,11 +28,14 @@ export const Introduction = () => {
               <p>Available for new projects</p>
             </div>
           </div>
-          <Links />
+          <Links state={state} />
         </div>
         <div className="flex flex-1 justify-center lg:justify-end">
           <div className="h-[320px] w-[300px]">
-            <img className="h-full w-full object-cover" src="/self-port.jpg" />
+            <img
+              className="h-full w-full object-cover shadow-[-20px_20px_8.0px_rgb(108,37,17)]"
+              src="/self-port.jpg"
+            />
           </div>
         </div>
       </div>

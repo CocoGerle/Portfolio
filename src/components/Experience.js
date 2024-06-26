@@ -35,7 +35,7 @@ const arr = [
 export const Experience = () => {
   return (
     <div className="bg-[#111827] py-[64px] px-[16px] text-[#D1D5DB]">
-      <div className="lg:w-[70%] lg:m-auto">
+      <div className="lg:w-[1440px] lg:m-auto">
         <div className="flex justify-center flex-col items-center mb-[24px] gap-[16px] ">
           <Tag value="Experience" />
           <p className="text-center">
@@ -43,8 +43,8 @@ export const Experience = () => {
           </p>
         </div>
         <div className="flex flex-col gap-[24px] lg:px-[192px]">
-          {arr.map((item)=>(
-            <Upwork date={item.date} title={item.title} list={item.list}/>
+          {arr.map((item) => (
+            <Upwork date={item.date} title={item.title} list={item.list} />
           ))}
         </div>
       </div>

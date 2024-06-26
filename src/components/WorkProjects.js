@@ -41,12 +41,10 @@ export const WorkProjects = (props) => {
         props.reverse ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
     >
-      <div className="bg-[#374151] p-[48px] lg:flex-1">
-        <div>
-          <img src={props.image} />
-        </div>
+      <div className="bg-[#374151]  p-[48px] lg:flex-1  ">
+        <img className="pt-[15px]" src={props.image} />
       </div>
-      <div className=" bg-[#111827] flex flex-col gap-[24px] p-[48px] lg:flex-1 lg:justify-center ">
+      <div className=" bg-[#111827] flex flex-col gap-[24px] pt-[63px] pb-[48px] px-[48px] lg:flex-1 lg:justify-start  ">
         <div className="text-[20px] font-bold">{props.title}</div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec

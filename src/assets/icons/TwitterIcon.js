@@ -1,4 +1,4 @@
-export const TwitterIcon = () => {
+export const TwitterIcon = ({ color }) => {
   return (
     <svg
       width="36"
@@ -9,7 +9,7 @@ export const TwitterIcon = () => {
     >
       <path
         d="M28 10C28 10 27.3 12.1 26 13.4C27.6 23.4 16.6 30.7 8 25C10.2 25.1 12.4 24.4 14 23C9 21.5 6.5 15.6 9 11C11.2 13.6 14.6 15.1 18 15C17.1 10.8 22 8.40002 25 11.2C26.1 11.2 28 10 28 10Z"
-        stroke="#D1D5DB"
+        stroke={color}
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
