@@ -2,7 +2,7 @@ import { Tag } from "../components/Tag";
 export const AboutMe = () => {
   return (
     <div className="bg-[#111827] py-[64px] px-[16px] text-[#D1D5DB] dark:bg-gray-50 dark:text-black">
-      <div className="lg:w-[1440px] lg:m-auto">
+      <div className="max-w-screen-lg lg:m-auto">
         <div className="flex justify-center mb-[24px] ">
           <Tag value="About Me" />
         </div>

@@ -16,14 +16,14 @@ export default function Home(props) {
   };
   return (
     <div className={state ? "dark" : " "}>
-      <div className="w-screen h-screen ">
+      <div className="w-screen h-screen">
         <NavBar toggleDarkMode={handleClick} state={state} />
         <Introduction state={state} />
         <AboutMe />
         <Skills state={state} />
         <Experience />
-        <Work />
-        <Footer />
+        <Work state={state} />
+        <Footer state={state} />
       </div>
     </div>
   );

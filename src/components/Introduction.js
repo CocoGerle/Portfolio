@@ -3,11 +3,11 @@ import { Links } from "./Links";
 export const Introduction = ({ state }) => {
   return (
     <div className="px-[16px] py-[64px]  lg:py-[96px] bg-[#030712] text-[#D1D5DB] dark:bg-white dark:text-black">
-      <div className="flex flex-col-reverse gap-[48px] lg:w-[1440px] m-auto lg:flex-row">
+      <div className="flex flex-col-reverse gap-[48px] max-w-screen-lg m-auto lg:flex-row">
         <div className="flex flex-1 flex-col gap-6">
           <div className="flex flex-col gap-2">
             <h1 className=" text-4xl text-[#F9FAFB] lg:text-7xl font-bold dark:text-black">
-              Hi, I’m Gerlee 👋
+              Hi, I’m Gerlee 🫶🏻
             </h1>
             <p>
               I specialize in full stack development, particularly with React.js

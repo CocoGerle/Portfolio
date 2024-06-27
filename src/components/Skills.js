@@ -83,7 +83,7 @@ export const Skills = ({ state }) => {
   return (
     <div>
       <div className="px-[16px] py-[64px]  lg:py-[96px] bg-[#030712] text-[#D1D5DB] dark:bg-white dark:text-black  ">
-        <div className="lg:w-[1440px] m-auto">
+        <div className="max-w-screen-lg m-auto">
           <div className="flex justify-center flex-col items-center mb-[24px] gap-[16px] ">
             <Tag value="Skills" />
             <p className="text-center">
