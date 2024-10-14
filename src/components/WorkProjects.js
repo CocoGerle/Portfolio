@@ -52,8 +52,8 @@ export const WorkProjects = (props) => {
           faucibus orci luctus et ultrices posuere cubilia curae.
         </p>
         <div className="flex flex-wrap gap-[8px]">
-          {arr.map((items) => (
-            <Tag value={items.text} />
+          {arr.map((items, index) => (
+            <Tag value={items.text} key={index} />
           ))}
         </div>
         <ShareIcon color={props.state ? "#4B5563" : "#d1d5da"} />

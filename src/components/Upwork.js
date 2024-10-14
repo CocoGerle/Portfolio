@@ -8,8 +8,8 @@ export const Upwork = (props) => {
       <div className="flex flex-col gap-[16px]">
         <h1>{props.title}</h1>
         <ul className="list-disc ml-[20px]">
-          {props.list.map((item) => (
-            <li>{item}</li>
+          {props.list.map((item, index) => (
+            <li key={index}>{item}</li>
           ))}
         </ul>
       </div>

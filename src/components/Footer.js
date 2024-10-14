@@ -12,8 +12,8 @@ export const Footer = ({ state }) => {
           <div className="flex justify-center flex-col items-center mb-[24px] gap-[24px] ">
             <Tag value="Get in touch" />
             <p className="text-center">
-              What’s next? Feel free to reach out to me if you're looking for a
-              developer, have a query, or simply want to connect.
+              What is next? Feel free to reach out to me if you are looking for
+              a developer, have a query, or simply want to connect.
             </p>
             <div>
               <div className="flex flex-row items-center gap-2 text-[32px] font-semibold justify-center">

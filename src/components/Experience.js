@@ -43,8 +43,13 @@ export const Experience = () => {
           </p>
         </div>
         <div className="flex flex-col gap-[24px] lg:px-[192px]">
-          {arr.map((item) => (
-            <Upwork date={item.date} title={item.title} list={item.list} />
+          {arr.map((item, index) => (
+            <Upwork
+              date={item.date}
+              title={item.title}
+              list={item.list}
+              key={index}
+            />
           ))}
         </div>
       </div>
