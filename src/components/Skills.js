@@ -47,10 +47,10 @@ export const Skills = ({ state }) => {
       svg: <Nest className="w-12 h-12" />,
       title: "ShadcnUI",
     },
-    {
-      svg: <Socket color={state ? "black" : "white"} />,
-      title: "Socket.js",
-    },
+    // {
+    //   svg: <Socket color={state ? "black" : "white"} />,
+    //   title: "Socket.js",
+    // },
     {
       svg: <MongoDB />,
       title: "MongoBD",
