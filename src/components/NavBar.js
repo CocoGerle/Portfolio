@@ -18,19 +18,19 @@ export const NavBar = (props) => {
           COCO
         </p>
         <div className="hidden lg:flex items-center">
-          <div className="flex gap-6 mr-6 ">
+          {/* <div className="flex gap-6 mr-6 ">
             <p>About</p>
             <p>Work</p>
             <p>Testimonials</p>
             <p>Contact</p>
-          </div>
+          </div> */}
           <div className="flex gap-[16px] items-center pl-[24px]">
             <button onClick={props.toggleDarkMode}>
               {props.state ? <SunIcon /> : <MoonIcon />}
             </button>
-            <div className="whitespace-nowrap bg-white py-[6px] px-[16px] text-black rounded-xl dark:bg-black dark:text-white">
+            {/* <div className="whitespace-nowrap bg-white py-[6px] px-[16px] text-black rounded-xl dark:bg-black dark:text-white">
               Download CV
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="lg:hidden">
@@ -51,12 +51,12 @@ export const NavBar = (props) => {
                   <DeleteIcon color={props.state ? "black" : "white"} />
                 </button>
               </div>
-              <div className="flex flex-col gap-6 mr-6 text-[#D1D5DB] text-base py-4 border-b border-[#1F2937] w-full dark:text-black dark:border-[#F3F4F6]">
+              {/* <div className="flex flex-col gap-6 mr-6 text-[#D1D5DB] text-base py-4 border-b border-[#1F2937] w-full dark:text-black dark:border-[#F3F4F6]">
                 <p>About</p>
                 <p>Work</p>
                 <p>Testimonials</p>
                 <p>Contact</p>
-              </div>
+              </div> */}
               <div className="flex flex-col gap-[16px] w-full items-center py-4">
                 <div
                   className="flex flex-row justify-between w-full py-4"

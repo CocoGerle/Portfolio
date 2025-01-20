@@ -44,8 +44,8 @@ export const Skills = ({ state }) => {
       title: "Express.js",
     },
     {
-      svg: <Nest />,
-      title: "Nest.js",
+      svg: <Nest className="w-12 h-12" />,
+      title: "ShadcnUI",
     },
     {
       svg: <Socket color={state ? "black" : "white"} />,
@@ -55,10 +55,10 @@ export const Skills = ({ state }) => {
       svg: <MongoDB />,
       title: "MongoBD",
     },
-    {
-      svg: <Sass />,
-      title: "Sass/Scss",
-    },
+    // {
+    //   svg: <Sass />,
+    //   title: "Sass/Scss",
+    // },
     {
       svg: <Tailwind />,
       title: "Tailwind.css",
@@ -68,8 +68,8 @@ export const Skills = ({ state }) => {
       title: "Cypress",
     },
     {
-      svg: <Storybook />,
-      title: "Storybook",
+      svg: <Storybook className="w-12 h-12" />,
+      title: "Graphql",
     },
     {
       svg: <Git />,
@@ -93,7 +93,7 @@ export const Skills = ({ state }) => {
           <div className="grid grid-cols-3  place-items-center gap-[16px] lg:grid lg:gap-[87px] lg:grid-cols-8 mt-[48px]">
             {arr.map((item) => (
               <div
-                className="flex flex-col items-center gap-2"
+                className="flex flex-col items-center gap-2 "
                 key={item.title}
               >
                 <div>{item.svg}</div>
