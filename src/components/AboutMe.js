@@ -31,11 +31,6 @@ export const AboutMe = () => {
               building cutting-edge web apps using Next.js, TypeScript, Nestjs,
               Tailwindcss, Graphql, and more.
             </p>
-
-            <p>
-              One last thing, I am available for freelance work, so feel free to
-              reach out and say hello! I promise I do not bite 😉
-            </p>
           </div>
         </div>
       </div>

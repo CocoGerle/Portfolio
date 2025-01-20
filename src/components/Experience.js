@@ -1,5 +1,6 @@
 import { Upwork } from "./Upwork";
 import { Tag } from "./Tag";
+import { list } from "postcss";
 const arr = [
   {
     title: "Full Stack Developer ",
@@ -13,9 +14,9 @@ export const Experience = () => {
       <div className="max-w-screen-lg lg:m-auto">
         <div className="flex justify-center flex-col items-center mb-[24px] gap-[16px] ">
           <Tag value="Experience" />
-          {/* <p className="text-center">
+          <p className="text-center">
             Here is a quick summary of my most recent experiences:
-          </p> */}
+          </p>
         </div>
         <div className="flex flex-col gap-[24px] lg:px-[192px]">
           {arr.map((item, index) => (
