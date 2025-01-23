@@ -54,7 +54,7 @@ export const WorkProjects = (props) => {
           ))}
         </div>
 
-        <Link target="blank" href={props.link}>
+        <Link target="blank" href={props.link} rel="noopener noreferrer">
           <ShareIcon color={props.state ? "#4B5563" : "#d1d5da"} />
         </Link>
       </div>

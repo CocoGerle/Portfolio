@@ -14,7 +14,7 @@ export const NavBar = (props) => {
   return (
     <div className="p-[16px] text-[#D1D5DB] bg-[#030712] text-[16px] dark:bg-white dark:text-black ">
       <div className="max-w-screen-lg flex justify-between m-auto">
-        <p className="text-4xl font-bold text-center text-white dark:text-black ">
+        <p className="text-4xl font-bold text-center text-white dark:text-black overflow-hidden">
           COCO
         </p>
         <div className="hidden lg:flex items-center">
@@ -25,8 +25,9 @@ export const NavBar = (props) => {
             <p>Contact</p>
           </div> */}
           <div className="flex gap-[16px] items-center pl-[24px]">
-            <button onClick={props.toggleDarkMode}>
+            <button onClick={props.toggleDarkMode} className="flex reverse">
               {props.state ? <SunIcon /> : <MoonIcon />}
+              {props.state ? " Өдрийн мүүд" : " Шөнийн мүүд"}
             </button>
             {/* <div className="whitespace-nowrap bg-white py-[6px] px-[16px] text-black rounded-xl dark:bg-black dark:text-white">
               Download CV
@@ -44,7 +45,7 @@ export const NavBar = (props) => {
           >
             <div className="flex flex-col items-start p-4 ">
               <div className="flex justify-between w-full pb-4  border-b border-[#1F2937] dark:border-[#F3F4F6]">
-                <p className="text-4xl font-bold text-center text-white dark:text-black ">
+                <p className="text-4xl font-bold text-center text-white dark:text-black overflow-hidden">
                   COCO
                 </p>
                 <button onClick={handleClick}>

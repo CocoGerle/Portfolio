@@ -85,10 +85,8 @@ export const Skills = ({ state }) => {
       <div className="px-[16px] py-[64px]  lg:py-[96px] bg-[#030712] text-[#D1D5DB] dark:bg-white dark:text-black  ">
         <div className="max-w-screen-lg m-auto">
           <div className="flex justify-center flex-col items-center mb-[24px] gap-[16px] ">
-            <Tag value="Skills" />
-            <p className="text-center">
-              The skills, tools and technologies I am really good at:
-            </p>
+            <Tag value="Чадварууд" />
+            <p className="text-center">Миний эзэмшсэн технологи болон tools:</p>
           </div>
           <div className="grid grid-cols-3  place-items-center gap-[16px] lg:grid lg:gap-[87px] lg:grid-cols-8 mt-[48px]">
             {arr.map((item) => (

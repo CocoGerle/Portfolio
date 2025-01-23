@@ -6,26 +6,29 @@ export const Introduction = ({ state }) => {
       <div className="flex flex-col-reverse gap-[48px] max-w-screen-lg m-auto lg:flex-row">
         <div className="flex flex-1 flex-col gap-6">
           <div className="flex flex-col gap-2">
-            <h1 className=" text-4xl text-[#F9FAFB] lg:text-7xl font-bold dark:text-black">
-              Hi, I’m Gerlee 🫶🏻
-            </h1>
+            <p
+              className="h-fit
+             text-2xl text-[#F9FAFB] lg:text-5xl font-bold dark:text-black overflow-hidden "
+            >
+              Сайн уу? Гэрлээ байна.🫶🏻
+            </p>
             <p>
-              I specialize in full stack development, particularly with React.js
-              and Node.js. My main goal is to create exceptional digital
-              experiences that are fast, visually appealing, and accessible to
-              everyone. I continue to find joy in crafting innovative solutions
-              and designs.
+              Би full stack хөгжүүлэгч тэр дундаа React.js, Node.js дээр голчлон
+              ажилладаг. Би хурдан үзэмжтэй, ямар ч төхөөрөмж дээр ажилладаг вэб
+              апп бүтээхийг зорьдог. Өөрийн сэтгэлдээ хүрсэн зүйл хийхээрээ
+              түүнээсээ их таашаал авдаг. Цаашид та бүхэнтэй ингэж ажиллахыг
+              хүсч байна.
             </p>
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex gap-2">
               {/* <img className="w-6 h-6 " src="/maps-icon.png" /> */}
               <MapsIcon color={state ? "black" : "#d1d5da"} />
-              <p>Ulaanbaatar, Mongolia</p>
+              <p>Улаанбаатар, Монгол</p>
             </div>
             <div className="flex gap-2">
               <img className="w-6 h-6" src="/green-icon.png" />
-              <p>Available for new projects</p>
+              <p>Хамтран ажиллахад хэзээд бэлэн</p>
             </div>
           </div>
           <Links state={state} />
